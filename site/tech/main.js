@@ -6,3 +6,8 @@ document.addEventListener('mousemove', e => {
         `
     })
 })
+const redirectButton = document.getElementById('redirectButton');
+
+        redirectButton.addEventListener('click', () => {
+            window.location.href = 'contacts.html';
+        });
