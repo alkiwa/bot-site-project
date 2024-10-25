@@ -1,14 +1,20 @@
-from aiogram.types import BotCommand
-from aiogram import Bot
+import asyncio
+from aiogram import Bot, Dispatcher
+from configuration.config import Config, load_config
+from handlers.command_handlers import command_router
+from handlers.handlers import handler_router
+from main_menu.menu import set_menu
 
-async def set_menu(bot: Bot):
 
-    main_menu_commands = [
-        BotCommand(command="/start", description="enter or change groups"),
-        BotCommand(command="/showdata", description="see your groups"),
-        BotCommand(command="/links", description="useful links"),
-        BotCommand(command="/curators", description="curator's contacts"),
-        BotCommand(command="/contacts", description="important contacts"),
-    ]
+async def main():
+    config: Config = load_config()
+    bot = Bot(token=config.tg_bot.token)
+    dp = Dispatcher()
+    dp.include_router(handler_router)
+    dp.include_router(command_router)
+    await set_menu(bot)
+    await bot.delete_webhook(drop_pending_updates=True)
+    await dp.start_polling(bot)
 
-    await bot.set_my_commands(main_menu_commands)
+
+asyncio.run(main())
