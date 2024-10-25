@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5f9e9f;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.useful_info 
+{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5vh;
+    font-style: normal;
+    margin-top : -100px;
+    margin-bottom: 60px;
+}
+
+.custom-button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.custom-button:hover {
+    background-color: #2980B9;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 26.66%; 
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-size: cover; 
+    background-position: center;
+}
+
+.carousel-item .widget-background {
+    background-image: url('background.jpg'); 
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; 
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+

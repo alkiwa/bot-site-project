@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --index: calc(1vw + 1vh);
+    --transition: 1.5s cubic-bezier (.05, .5, 0.0, 1.0);
+}
+@font-face 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+    font-weight: 900;
+}
+@font-face 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+}
+body
+{
+    /* background-image: url("fon12.css"); */
+    background-color: #5f9e9f;
+    background-size : cover;
+    backdrop-filter: blur(500px);
+    color:white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: normal;
+    font-size: 3.2vh;
+}
+/* body 
+{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #5f9e9f;
+} */
+.blurred-background 
+{
+    width: 100%;
+    max-width: 10000px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Размытие фона за контейнером */
+    border-radius: 10px;
+    color: #333;
+}
+.info 
+{
+    flex: 1;
+    max-width: 1200px; /* Ограничиваем ширину блоков */
+    padding: 1vh;
+    background-color: #dde6e8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0, 0, 0.1);
+    margin-left: 150px;
+    margin-bottom: 30px;
+    font-family: "Arial", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+ 
+
+.buttons-container 
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 34%;
+    height: 70px;
+}
+
+/* .custom-button 
+{
+    padding: 15px 30px;
+    background-color: #3a9bc1;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+    font-weight : bold;
+} */
+.custom-button {
+    padding: 15px 30px;
+    width: 50%;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 10px;
+}
+ 
+.custom-button:hover 
+{
+    background-color: #2980B9;
+}
+.useful_info 
+{
+    background-image: url('background.png');
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top : 30px;
+}
+.links h2, .contacts h3 
+{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* Общий стиль для секции с контактами */
+.contacts 
+{
+    text-align: center;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top: -45px;
+}
+
+/* Выровнять заголовки по центру и добавить стили шрифта */
+.contacts h2, .contacts h3 
+{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contacts h2 
+{
+    color: #000000;
+    font-size: 28px;
+}
+
+.contacts h3 
+{
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox для выравнивания потоков */
+.curators-container 
+{
+    display: flex;
+    justify-content: space-around; /* Распределяем блоки по экрану */
+    align-items: flex-start;
+    margin-bottom: 40px; /* Отступ между потоками */
+}
+
+/* Стили для каждого блока с кураторами */
+.curators-group 
+{
+    flex: 1;
+    max-width: 400px; /* Ограничиваем ширину блоков */
+    padding: 20px;
+    /* background-color: #a2dedf; */
+    background-color: #aecdce;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для групп кураторов */
+.curators 
+{
+    display: block;
+}
+
+/* Стили для каждого блока внутри */
+.curators div 
+{
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #dde6e8; /* Полупрозрачный фон */
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curators p 
+{
+    margin: 10px 0;
+}
+
+.curators a 
+{
+    color: #5f9e9f;
+    text-shadow: 
+        -0.3px -0.3px 0 #000, /* Тень слева сверху */
+         0.3px -0.3px 0 #000, /* Тень справа сверху */
+        -0.3px  0.3px 0 #000, /* Тень слева снизу */
+         0.3px  0.3px 0 #000; /* Тень справа снизу */
+    text-decoration: none;
+}
+
+.curators a:hover 
+{
+    text-decoration: underline;
+}
