@@ -17,14 +17,13 @@
 }
 @font-face 
 {
-    font-family: ;
+    font-family: "Russo";
     src: url();
 }
 body
 {
     background-color: black;
     color:white;
-    font-family: ;
 }
 .logo
 {
@@ -54,11 +53,7 @@ body
 .layers__item
 {
     position: absolute;
-    inset: -5vw; /*new method */
-    /* top: -5vw;
-    left: -5vw;
-    right: -5vw;
-    bottom: -5vw; использовалось раньше */
+    inset: -5vw;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -102,10 +97,8 @@ body
 .hero-content__p
 {
     text-transform: none;
-    font-family: ;
     letter-spacing: normal;
     font-size: calc(var(--index));
-    line-height: ;
 }
 .button-start
 {
@@ -115,14 +108,33 @@ body
     font-size: calc(var(--index));
     letter-spacing: -0.2vw;
     padding: calc(var(--index)) calc(var(--index));
-    background-color: transparent;
+    background-color: rgba(106, 105, 105, 0.5);;
     color: white;
     border-radius: 10em;
     border: rgb(255, 255, 255 / .4) 3px solid;
     outline: none;
     cursor: pointer;
 }
-.layer-4, .layer-5, .layer-6
+.layer-4, .layer-5
 {
     pointer-events: none;
+}
+.text{
+    font-size:50px;
+    color:rgb(250, 248, 248); 
+    text-align: center; 
+}
+.text1{
+    font-size:32px;
+    color:rgb(250, 248, 248); 
+    text-align: center; 
+}
+.era {
+    background-color: rgba(106, 105, 105, 0.5); /* Полупрозрачный фон */
+    border: 1px solid #ddd;
+    padding: 40px;
+    margin: 10px;
+    width: 93%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
 }
