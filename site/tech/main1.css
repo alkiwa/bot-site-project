@@ -1,0 +1,140 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --index: calc(1vw + 1vh);
+    --transition: 1.5s cubic-bezier (.05, .5, 0.0, 1.0);
+}
+@font-face 
+{
+    font-family: ;
+    src: url();
+    font-weight 900;
+}
+@font-face 
+{
+    font-family: "Russo";
+    src: url();
+}
+body
+{
+    background-color: black;
+    color:white;
+}
+.logo
+{
+    --logo-size: calc(var(var(--index)) * 7.8);
+    width: calc(ver(--index) * 3);
+    height: calc(ver(--index) * 3);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    z-index: 1;
+}
+.layers
+{
+    perspective: 1000px;
+    overflow: hidden;
+}
+.layers__container 
+{
+    height: 100vh;
+    min-height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;
+    transition: transform var(--transition);
+}
+.layers__item
+{
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layer-1 
+{
+    transform: translateZ(-50px) scale(1.06);
+}
+.layer-2
+{
+    transform: translateZ(80px) scale(.88);
+}
+.layer-3 
+{
+    transform: translateZ(180px) scale(.88);
+}
+.layer-4 
+{
+    transform: translateZ(190px) scale(.88);
+}
+.layer-5 
+{
+    transform: translateZ(300px) scale(.88);
+}
+
+.hero-content
+{
+    font-size: calc(var(--index));
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index));
+    line-height: 1.35em;
+    margin-top: calc(var(--index) * 5.5);
+}
+.hero-content span
+{
+    display: block;
+}
+.hero-content__p
+{
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: calc(var(--index));
+}
+.button-start
+{
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: calc(var(--index));
+    letter-spacing: -0.2vw;
+    padding: calc(var(--index)) calc(var(--index));
+    background-color: rgba(106, 105, 105, 0.5);;
+    color: white;
+    border-radius: 10em;
+    border: rgb(255, 255, 255 / .4) 3px solid;
+    outline: none;
+    cursor: pointer;
+}
+.layer-4, .layer-5
+{
+    pointer-events: none;
+}
+.text{
+    font-size:50px;
+    color:rgb(250, 248, 248); 
+    text-align: center; 
+}
+.text1{
+    font-size:32px;
+    color:rgb(250, 248, 248); 
+    text-align: center; 
+}
+.era {
+    background-color: rgba(106, 105, 105, 0.5); /* Полупрозрачный фон */
+    border: 1px solid #ddd;
+    padding: 40px;
+    margin: 10px;
+    width: 93%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+}
